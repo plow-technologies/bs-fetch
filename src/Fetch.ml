@@ -368,3 +368,4 @@ external fetch : string -> response Js.Promise.t = "" [@@bs.val]
 external fetchWithInit : string -> requestInit -> response Js.Promise.t = "fetch" [@@bs.val]
 external fetchWithRequest : request -> response Js.Promise.t = "fetch" [@@bs.val]
 external fetchWithRequestInit : request -> requestInit -> response Js.Promise.t = "fetch" [@@bs.val]
+external toJsObject : 'a Js.Dict.t -> < .. > Js.t = "%identity"
